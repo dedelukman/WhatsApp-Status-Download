@@ -8,7 +8,7 @@
     <color name="nav_drawer">#000000</color>
     <color name="app_background">#000000</color>
     <color name="drawer_item">#FFFFFF</color>
-    <color name="drawer_item_selected">#EC407A</color>
+    <color name="drawer_item_selected">#00af42</color>
 
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
@@ -16,7 +16,7 @@
     <color name="tab_indicator">#FFFFFF</color>
     <color name="progressBar_color">#FFFFFF</color>
     <color name="textView_noData">#FFFFFF</color>
-    <color name="activate_color">#EC407A</color>
+    <color name="activate_color">#00af42</color>
     <color name="in_activate_color">#FFFFFF</color>
     <color name="control_image_show">#80000000</color>
 

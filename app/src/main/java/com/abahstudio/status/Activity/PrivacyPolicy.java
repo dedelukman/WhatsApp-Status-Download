@@ -1,6 +1,9 @@
 package com.abahstudio.status.Activity;
 
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +29,11 @@ public class PrivacyPolicy extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+//        TextView privacyPolicyTextView = findViewById(R.id.textView_privacy_policy);
+//        privacyPolicyTextView.setText(Html.fromHtml(getString(R.string.privacy_policy_html)));
+//        privacyPolicyTextView.setMovementMethod(LinkMovementMethod.getInstance());
+
 
     }
 

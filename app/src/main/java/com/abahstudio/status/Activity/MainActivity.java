@@ -210,10 +210,10 @@ public class MainActivity extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_more_app))));
                 return true;
 
-            case R.id.privacy_policy:
-                select(6);
-                startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
-                return true;
+//            case R.id.privacy_policy:
+//                select(6);
+//                startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
+//                return true;
 
             default:
                 return true;

@@ -6,7 +6,7 @@
 
     <string name="isRTL">false</string>
 
-    <string name="play_more_app">https://play.google.com/store/apps</string>
+    <string name="play_more_app">https://play.google.com/store/apps/developer?id=Abah+Studio</string>
 
     <string name="image">Image</string>
     <string name="video">Video</string>
@@ -34,5 +34,6 @@
     <string name="intro_one">intro one</string>
     <string name="intro_two">intro two</string>
     <string name="choose_one">Choose one</string>
+
 
 </resources>
