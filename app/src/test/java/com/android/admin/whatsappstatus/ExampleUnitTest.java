@@ -1,4 +1,4 @@
-package com.app.status;
+package com.abahstudio.status;
 
 import org.junit.Test;
 

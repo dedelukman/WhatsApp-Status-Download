@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdk 34
     defaultConfig {
-        applicationId "com.app.status"
+        applicationId "com.abahstudio.status"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 1
@@ -28,7 +28,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.app.status'
+    namespace 'com.abahstudio.status'
     buildFeatures {
         buildConfig true
     }

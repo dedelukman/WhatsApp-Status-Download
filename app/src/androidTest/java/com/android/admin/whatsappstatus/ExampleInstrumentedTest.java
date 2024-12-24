@@ -1,4 +1,4 @@
-package com.app.status;
+package com.abahstudio.status;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.app.status", appContext.getPackageName());
+        assertEquals("com.abahstudio.status", appContext.getPackageName());
     }
 }
