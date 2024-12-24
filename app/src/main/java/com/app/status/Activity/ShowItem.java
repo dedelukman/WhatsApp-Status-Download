@@ -28,8 +28,11 @@ import com.app.status.R;
 import com.app.status.Util.Constant;
 import com.app.status.Util.Method;
 import com.app.status.Util.ZoomOutTransformation;
+import com.canhub.cropper.CropImage;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.theartofdev.edmodo.cropper.CropImage;
+//import com.theartofdev.edmodo.cropper.CropImage;
+import com.canhub.cropper.CropImage;
+
 
 import org.apache.commons.io.FileUtils;
 
@@ -289,7 +292,7 @@ public class ShowItem extends AppCompatActivity {
             return;
         }
         uri = Uri.fromFile(file);
-        CropImage.activity(uri).start(ShowItem.this);
+//        CropImage.activity(uri).start(ShowItem.this);
 
     }
 
@@ -297,18 +300,18 @@ public class ShowItem extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
-            CropImage.ActivityResult result = CropImage.getActivityResult(data);
-            if (resultCode == RESULT_OK) {
-                resultUri = result.getUri();
-                try {
-                    Bitmap myBitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(resultUri));
-                    set_Wallpaper(myBitmap);
-                } catch (IOException e) {
-                    System.out.println(e);
-                }
-            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
-                Exception error = result.getError();
-            }
+//            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+//            if (resultCode == RESULT_OK) {
+//                resultUri = result.getUri();
+//                try {
+//                    Bitmap myBitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(resultUri));
+//                    set_Wallpaper(myBitmap);
+//                } catch (IOException e) {
+//                    System.out.println(e);
+//                }
+//            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+//                Exception error = result.getError();
+//            }
         }
     }
 

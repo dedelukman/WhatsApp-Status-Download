@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WA-Status-Download.iml" filepath="$PROJECT_DIR$/.idea/modules/WA-Status-Download.iml" group="WA-Status-Download" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WA-Status-Download/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/whatsapp-status-download.iml" filepath="$PROJECT_DIR$/.idea/modules/whatsapp-status-download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/whatsapp-status-download.app.unitTest.iml" />
     </modules>
   </component>
 </project>

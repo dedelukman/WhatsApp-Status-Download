@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.app.status.R;
 import com.app.status.Util.Method;
 import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayerFactory;
+//import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
+//import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.ui.PlayerView;
@@ -54,34 +54,34 @@ public class VideoPlayer extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar_video_play);
         progressBar.setVisibility(View.VISIBLE);
 
-        DefaultTrackSelector trackSelector = new DefaultTrackSelector();
-        player = ExoPlayerFactory.newSimpleInstance(VideoPlayer.this, trackSelector);
-        playerView.setPlayer(player);
+//        DefaultTrackSelector trackSelector = new DefaultTrackSelector();
+//        player = ExoPlayerFactory.newSimpleInstance(VideoPlayer.this, trackSelector);
+//        playerView.setPlayer(player);
 
         // Produces DataSource instances through which media data is loaded.
         DataSource.Factory dataSourceFactory = new DefaultDataSourceFactory(VideoPlayer.this,
                 Util.getUserAgent(VideoPlayer.this, getResources().getString(R.string.app_name)));
         // This is the MediaSource representing the media to be played.
-        MediaSource videoSource = new ExtractorMediaSource.Factory(dataSourceFactory)
-                .createMediaSource(Uri.fromFile(new File(videoLink)));
+//        MediaSource videoSource = new ExtractorMediaSource.Factory(dataSourceFactory)
+//                .createMediaSource(Uri.fromFile(new File(videoLink)));
         // Prepare the player with the source.
-        player.prepare(videoSource);
+//        player.prepare(videoSource);
         player.setPlayWhenReady(true);
-        player.addListener(new Player.DefaultEventListener() {
-            @Override
-            public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
-                if (playWhenReady) {
-                    progressBar.setVisibility(View.GONE);
-                }
-                super.onPlayerStateChanged(playWhenReady, playbackState);
-            }
-
-            @Override
-            public void onPlayerError(ExoPlaybackException error) {
-                Log.d("show_error", error.toString());
-                super.onPlayerError(error);
-            }
-        });
+//        player.addListener(new Player.DefaultEventListener() {
+//            @Override
+//            public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
+//                if (playWhenReady) {
+//                    progressBar.setVisibility(View.GONE);
+//                }
+//                super.onPlayerStateChanged(playWhenReady, playbackState);
+//            }
+//
+//            @Override
+//            public void onPlayerError(ExoPlaybackException error) {
+//                Log.d("show_error", error.toString());
+//                super.onPlayerError(error);
+//            }
+//        });
 
     }
 

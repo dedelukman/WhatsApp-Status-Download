@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdk 34
     defaultConfig {
         applicationId "com.app.status"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -28,6 +28,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.app.status'
+    buildFeatures {
+        buildConfig true
+    }
 
 }
 
@@ -42,9 +46,11 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha06'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+//    implementation 'com.github.CanHub:Android-Image-Cropper:4.2.1'
+    implementation 'com.vanniktech:android-image-cropper:4.3.3'
     implementation 'commons-io:commons-io:2.4'
-    implementation 'com.google.android.exoplayer:exoplayer:2.11.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.karumi:dexter:6.0.2'
     implementation 'androidx.multidex:multidex:2.0.1'
